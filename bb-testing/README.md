@@ -6,7 +6,7 @@ Run the following commands in the root directory of the repository (`/buildbot-1
 ```
 ./bb-testing/installDeps.sh
 
-. .venv/bin/activate
+. .venv/bin/activate (or . .venv/Scripts/activate for Windows)
 ```
 ## Step 2: Move into the `buildbot-1/bb-testing` directory
 ```
@@ -17,7 +17,8 @@ Make sure you are in the buildbot-1/bb-testing` directory
 ```
 ./runTrial.sh
 ```
-This will generate a JUnit XML test log in the `buildbot-1/bb-testing/junit-reports` directory. Note that the logs are named in the format `TEST-YYYY-MM-DD-HH-MM-SS.xml` (prefixed with `TEST-`, suffixed with `DATE-TIME.xml`)
+This will generate a JUnit XML test log in the `buildbot-1/bb-testing/junit-reports` directory (the output on the command line will be garbage due to the piping).  
+Note that the logs are named in the format `TEST-YYYY-MM-DD-HH-MM-SS.xml` (prefixed with `TEST-`, suffixed with `DATE-TIME.xml`).
 ## Step 4: Open the test log using the Test Log Parser app
 Run the Test Log Parser app using Python with a relative path to the log file as an argument. You can
 ```
