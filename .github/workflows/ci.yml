@@ -38,3 +38,10 @@ jobs:
       - name: "Run tests for ${{ matrix.python-version }}"
         run: "python -m twisted.trial --reporter=text --rterrors buildbot.test buildbot_worker.test"
         timeout-minutes: 30
+      
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            bb-testing/junit-reports/*.xml
