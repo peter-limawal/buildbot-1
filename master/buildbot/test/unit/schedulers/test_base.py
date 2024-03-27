@@ -846,3 +846,5 @@ class BaseScheduler(scheduler.SchedulerMixin, TestReactorMixin, unittest.TestCas
         sched = self.makeScheduler(codebases={'lib': {'repository': 'librepo'}})
         # Assert that the attribute of sched.some_status obtained using the getter functions getSomeStatus is NOT equal to "NO STATUS"
         self.assertNotEqual(sched.getSomeStatus(), "NO STATUS")
+
+        # Note: sched.getSomeStatus() function is defined in buildbot-1/master/buildbot/schedulers/
