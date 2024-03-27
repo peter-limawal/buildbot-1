@@ -1,7 +1,8 @@
 name: BB Testing
 on:
   push:
-  - master
+    branches:
+    - master
   pull_requests:
 
 jobs:
