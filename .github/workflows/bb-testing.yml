@@ -1,0 +1,20 @@
+name: BB Testing
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  bb-testing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: "actions/checkout@v4"
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2
+        if: always()
+        with:
+          files: |
+            bb-testing/junit-reports/*.xml
