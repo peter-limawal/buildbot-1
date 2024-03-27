@@ -2,6 +2,8 @@
 ## Step 1: Set up virtual environment & install dependencies
 Run the following commands in the root directory of the repository (`/buildbot-1`)
 ```
+python3 -m venv .venv
+
 make virtualenv
 
 . .venv/bin/activate
