@@ -28,4 +28,7 @@ python3 bb-testing.py junit-reports/TEST-YYYY-MM-DD-HH:MM:SS.xml
 Don't forget to change the suffix of the *relative path* argument to a valid log file.
 ## Step 5: Explore the Test Log Parser app
 The six panels on the top of the app shows a summary of the test log.  
-The three different tables shows the details of the Failed, Skipped, and Passed test cases. You can use your mouse or arrow keys to scroll up and down from the table, and you can click or press ENTER to seen more details for each test case.
+<img width="600" alt="Screenshot 2024-03-27 at 09 48 00" src="https://github.com/peter-limawal/buildbot-1/assets/59006829/3a69707d-3c53-4d73-88b6-584a8379c38b">  
+The three different tables shows the details of the Failed, Skipped, and Passed test cases.  
+You can use your mouse or arrow keys to scroll up and down from the table, and you can click or press ENTER to seen more details for each test case.  
+<img width="600" alt="Screenshot 2024-03-27 at 09 49 05" src="https://github.com/peter-limawal/buildbot-1/assets/59006829/eed7e331-d54d-487a-8679-93e5f6614f6c">
