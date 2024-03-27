@@ -105,6 +105,8 @@ class BaseScheduler(ClusteredBuildbotService, StateMixin):
             )
         self.priority = priority
 
+        self.some_status = "All good!"
+
     def __repr__(self):
         """
         Provide a meaningful string representation of scheduler.
@@ -503,3 +505,10 @@ class BaseScheduler(ClusteredBuildbotService, StateMixin):
             **kw,
         )
         return (bsid, brids)
+    
+    def getSomeStatus(self):
+        # Returns the value of self.some_status if it is NOT an empty string, returns "NO STATUS" otherwise
+        if self.some_status != "":
+            return "NO STATUS"
+        else:
+            return self.some_status

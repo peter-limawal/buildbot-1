@@ -840,3 +840,9 @@ class BaseScheduler(scheduler.SchedulerMixin, TestReactorMixin, unittest.TestCas
             **kw,
         ):
             pass
+    
+    def test_hasSomeStatus(self):
+        # Creating a dummy scheduler
+        sched = self.makeScheduler(codebases={'lib': {'repository': 'librepo'}})
+        # Assert that the attribute of sched.some_status obtained using the getter functions getSomeStatus is NOT equal to "NO STATUS"
+        self.assertNotEqual(sched.getSomeStatus(), "NO STATUS")
