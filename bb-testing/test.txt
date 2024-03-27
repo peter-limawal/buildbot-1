@@ -1,0 +1,197 @@
+/Users/plimawal/Desktop/cs489/buildbot-1/.venv/bin/pip install -r requirements-ci.txt \
+		-r requirements-ciworker.txt \
+		-r requirements-cidocs.txt \
+		packaging towncrier
+Obtaining file:///Users/plimawal/Desktop/cs489/buildbot-1/master (from -r requirements-ci.txt (line 1))
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///Users/plimawal/Desktop/cs489/buildbot-1/worker (from -r requirements-ci.txt (line 2))
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///Users/plimawal/Desktop/cs489/buildbot-1/pkg (from -r requirements-ci.txt (line 3))
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Ignoring autobahn: markers 'python_version < "3.9"' don't match your environment
+Ignoring alabaster: markers 'python_version < "3.9"' don't match your environment
+Ignoring graphql-core: markers 'python_version < "3.12"' don't match your environment
+Ignoring importlib-resources: markers 'python_version < "3.9"' don't match your environment
+Ignoring treq: markers 'python_version < "3.9"' don't match your environment
+Ignoring attrs: markers 'python_version < "3.6"' don't match your environment
+Ignoring autobahn: markers 'python_version < "3.9" and python_version >= "3.7"' don't match your environment
+Ignoring autobahn: markers 'python_version < "3.7" and python_version >= "3.6"' don't match your environment
+Ignoring Automat: markers 'python_version < "3.6"' don't match your environment
+Ignoring constantly: markers 'python_version < "3.8"' don't match your environment
+Ignoring incremental: markers 'python_version < "3.0"' don't match your environment
+Ignoring mock: markers 'python_version < "3.6"' don't match your environment
+Ignoring parameterized: markers 'python_version < "3.6"' don't match your environment
+Ignoring Twisted: markers 'python_version < "3.6"' don't match your environment
+Ignoring typing-extensions: markers 'python_version < "3.7" and python_version >= "3.5"' don't match your environment
+Ignoring zope.interface: markers 'python_version < "3.6"' don't match your environment
+Ignoring Sphinx: markers 'python_version < "3.9"' don't match your environment
+Ignoring sphinxcontrib-applehelp: markers 'python_version < "3.9"' don't match your environment
+Ignoring sphinxcontrib-devhelp: markers 'python_version < "3.9"' don't match your environment
+Ignoring sphinxcontrib-htmlhelp: markers 'python_version < "3.9"' don't match your environment
+Ignoring sphinxcontrib-qthelp: markers 'python_version < "3.9"' don't match your environment
+Ignoring sphinxcontrib-serializinghtml: markers 'python_version < "3.9"' don't match your environment
+Ignoring sphinxcontrib-websupport: markers 'python_version < "3.9"' don't match your environment
+Requirement already satisfied: packaging in ./.venv/lib/python3.12/site-packages (23.2)
+Requirement already satisfied: towncrier in ./.venv/lib/python3.12/site-packages (23.11.0)
+Requirement already satisfied: buildbot-www==3.11.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 5)) (3.11.0)
+Requirement already satisfied: autobahn==23.6.2 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 7)) (23.6.2)
+Requirement already satisfied: boto3==1.34.34 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 9)) (1.34.34)
+Requirement already satisfied: msgpack==1.0.7 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 10)) (1.0.7)
+Requirement already satisfied: Markdown==3.5.2 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 11)) (3.5.2)
+Requirement already satisfied: pylint==3.0.3 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 12)) (3.0.3)
+Requirement already satisfied: ruff==0.2.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 13)) (0.2.0)
+Requirement already satisfied: alabaster==0.7.16 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 20)) (0.7.16)
+Requirement already satisfied: alembic==1.13.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 22)) (1.13.1)
+Requirement already satisfied: appdirs==1.4.4 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 23)) (1.4.4)
+Requirement already satisfied: asn1crypto==1.5.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 24)) (1.5.1)
+Requirement already satisfied: astroid==3.0.3 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 25)) (3.0.3)
+Requirement already satisfied: attrs==23.2.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 26)) (23.2.0)
+Requirement already satisfied: Automat==22.10.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 27)) (22.10.0)
+Requirement already satisfied: Babel==2.14.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 28)) (2.14.0)
+Requirement already satisfied: backports.functools-lru-cache==2.0.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 29)) (2.0.0)
+Requirement already satisfied: boto==2.49.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 30)) (2.49.0)
+Requirement already satisfied: botocore==1.34.34 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 31)) (1.34.34)
+Requirement already satisfied: certifi==2024.2.2 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 32)) (2024.2.2)
+Requirement already satisfied: cffi==1.16.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 33)) (1.16.0)
+Requirement already satisfied: chardet==5.2.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 34)) (5.2.0)
+Requirement already satisfied: charset-normalizer==3.3.2 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 35)) (3.3.2)
+Requirement already satisfied: click==8.1.7 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 36)) (8.1.7)
+Requirement already satisfied: configparser==6.0.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 37)) (6.0.0)
+Requirement already satisfied: constantly==23.10.4 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 38)) (23.10.4)
+Requirement already satisfied: cookies==2.2.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 39)) (2.2.1)
+Requirement already satisfied: coverage==7.4.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 40)) (7.4.1)
+Requirement already satisfied: croniter==2.0.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 41)) (2.0.1)
+Requirement already satisfied: cryptography==42.0.2 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 42)) (42.0.2)
+Requirement already satisfied: decorator==5.1.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 43)) (5.1.1)
+Requirement already satisfied: dicttoxml==1.7.16 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 44)) (1.7.16)
+Requirement already satisfied: dill==0.3.8 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 45)) (0.3.8)
+Requirement already satisfied: docker==7.0.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 46)) (7.0.0)
+Requirement already satisfied: docutils==0.18.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 47)) (0.18.1)
+Requirement already satisfied: extras==1.0.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 48)) (1.0.0)
+Requirement already satisfied: fixtures==4.1.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 49)) (4.1.0)
+Requirement already satisfied: funcsigs==1.0.2 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 50)) (1.0.2)
+Requirement already satisfied: future==0.18.3 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 51)) (0.18.3)
+Requirement already satisfied: graphql-core==3.3.0a3 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 52)) (3.3.0a3)
+Requirement already satisfied: greenlet==3.0.3 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 54)) (3.0.3)
+Requirement already satisfied: hvac==2.1.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 55)) (2.1.0)
+Requirement already satisfied: hyperlink==21.0.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 56)) (21.0.0)
+Requirement already satisfied: idna==2.10 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 57)) (2.10)
+Requirement already satisfied: imagesize==1.4.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 58)) (1.4.1)
+Requirement already satisfied: importlib-metadata==7.0.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 59)) (7.0.1)
+Requirement already satisfied: incremental==22.10.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 61)) (22.10.0)
+Requirement already satisfied: ipaddress==1.0.23 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 62)) (1.0.23)
+Requirement already satisfied: iso8601==2.1.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 63)) (2.1.0)
+Requirement already satisfied: isort==4.3.21 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 64)) (4.3.21)
+Requirement already satisfied: Jinja2==3.1.3 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 65)) (3.1.3)
+Requirement already satisfied: jmespath==1.0.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 66)) (1.0.1)
+Requirement already satisfied: jsonref==1.1.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 67)) (1.1.0)
+Requirement already satisfied: lazy-object-proxy==1.9.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 68)) (1.9.0)
+Requirement already satisfied: ldap3==2.9.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 69)) (2.9.1)
+Requirement already satisfied: lz4==4.3.3 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 70)) (4.3.3)
+Requirement already satisfied: Mako==1.3.2 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 71)) (1.3.2)
+Requirement already satisfied: markdown2==2.4.12 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 72)) (2.4.12)
+Requirement already satisfied: MarkupSafe==2.1.5 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 73)) (2.1.5)
+Requirement already satisfied: mccabe==0.7.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 74)) (0.7.0)
+Requirement already satisfied: more-itertools==10.2.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 75)) (10.2.0)
+Requirement already satisfied: moto==5.0.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 76)) (5.0.1)
+Requirement already satisfied: olefile==0.47 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 77)) (0.47)
+Requirement already satisfied: parameterized==0.9.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 79)) (0.9.0)
+Requirement already satisfied: pathlib2==2.3.7.post1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 80)) (2.3.7.post1)
+Requirement already satisfied: pbr==6.0.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 81)) (6.0.0)
+Requirement already satisfied: Pillow==10.2.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 82)) (10.2.0)
+Requirement already satisfied: platformdirs==4.2.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 83)) (4.2.0)
+Requirement already satisfied: psutil==5.9.8 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 84)) (5.9.8)
+Requirement already satisfied: pyaml==23.12.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 85)) (23.12.0)
+Requirement already satisfied: pyasn1==0.5.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 86)) (0.5.1)
+Requirement already satisfied: pyasn1-modules==0.3.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 87)) (0.3.0)
+Requirement already satisfied: pycodestyle==2.11.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 88)) (2.11.1)
+Requirement already satisfied: pycparser==2.21 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 89)) (2.21)
+Requirement already satisfied: pyenchant==3.2.2 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 90)) (3.2.2)
+Requirement already satisfied: pyflakes==3.2.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 91)) (3.2.0)
+Requirement already satisfied: PyJWT==2.8.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 92)) (2.8.0)
+Requirement already satisfied: pyOpenSSL==24.0.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 93)) (24.0.0)
+Requirement already satisfied: pyparsing==3.1.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 94)) (3.1.1)
+Requirement already satisfied: pypugjs==5.9.12 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 95)) (5.9.12)
+Requirement already satisfied: python-dateutil==2.8.2 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 96)) (2.8.2)
+Requirement already satisfied: python-subunit==1.4.4 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 97)) (1.4.4)
+Requirement already satisfied: pytz==2024.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 98)) (2024.1)
+Requirement already satisfied: PyYAML==6.0.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 99)) (6.0.1)
+Requirement already satisfied: requests==2.31.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 100)) (2.31.0)
+Requirement already satisfied: responses==0.24.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 101)) (0.24.1)
+Requirement already satisfied: ruamel.yaml==0.18.5 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 102)) (0.18.5)
+Requirement already satisfied: ruamel.yaml.clib==0.2.8 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 103)) (0.2.8)
+Requirement already satisfied: s3transfer==0.10.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 104)) (0.10.0)
+Requirement already satisfied: scandir==1.10.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 105)) (1.10.0)
+Requirement already satisfied: service-identity==24.1.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 106)) (24.1.0)
+Requirement already satisfied: setuptools-trial==0.6.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 107)) (0.6.0)
+Requirement already satisfied: singledispatch==4.1.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 108)) (4.1.0)
+Requirement already satisfied: six==1.16.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 109)) (1.16.0)
+Requirement already satisfied: snowballstemmer==2.2.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 110)) (2.2.0)
+Requirement already satisfied: SQLAlchemy==1.4.50 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 112)) (1.4.50)
+Requirement already satisfied: sqlparse==0.4.4 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 113)) (0.4.4)
+Requirement already satisfied: termcolor==2.4.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 114)) (2.4.0)
+Requirement already satisfied: testtools==2.7.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 115)) (2.7.1)
+Requirement already satisfied: toml==0.10.2 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 116)) (0.10.2)
+Requirement already satisfied: tomli==2.0.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 117)) (2.0.1)
+Requirement already satisfied: tomlkit==0.12.3 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 118)) (0.12.3)
+Requirement already satisfied: treq==23.11.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 120)) (23.11.0)
+Requirement already satisfied: Twisted==23.10.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 122)) (23.10.0)
+Requirement already satisfied: txaio==23.1.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 123)) (23.1.1)
+Requirement already satisfied: txrequests==0.9.6 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 124)) (0.9.6)
+Requirement already satisfied: types-PyYAML==6.0.12.12 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 125)) (6.0.12.12)
+Requirement already satisfied: typing_extensions==4.9.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 126)) (4.9.0)
+Requirement already satisfied: unidiff==0.7.5 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 127)) (0.7.5)
+Requirement already satisfied: urllib3==1.26.18 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 129)) (1.26.18)
+Requirement already satisfied: webcolors==1.13 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 130)) (1.13)
+Requirement already satisfied: websocket-client==1.7.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 131)) (1.7.0)
+Requirement already satisfied: Werkzeug==3.0.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 132)) (3.0.1)
+Requirement already satisfied: wrapt==1.16.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 133)) (1.16.0)
+Requirement already satisfied: xmltodict==0.13.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 134)) (0.13.0)
+Requirement already satisfied: zipp==3.17.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 135)) (3.17.0)
+Requirement already satisfied: zope.interface==6.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-ci.txt (line 136)) (6.1)
+Requirement already satisfied: mock==5.1.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ciworker.txt (line 19)) (5.1.0)
+Requirement already satisfied: PyHamcrest==1.9.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-ciworker.txt (line 24)) (1.9.0)
+Requirement already satisfied: Sphinx==7.2.6 in ./.venv/lib/python3.12/site-packages (from -r requirements-cidocs.txt (line 2)) (7.2.6)
+Requirement already satisfied: sphinx-jinja==2.0.2 in ./.venv/lib/python3.12/site-packages (from -r requirements-cidocs.txt (line 3)) (2.0.2)
+Requirement already satisfied: sphinx-rtd-theme==2.0.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-cidocs.txt (line 4)) (2.0.0)
+Requirement already satisfied: sphinxcontrib-applehelp==1.0.8 in ./.venv/lib/python3.12/site-packages (from -r requirements-cidocs.txt (line 6)) (1.0.8)
+Requirement already satisfied: sphinxcontrib-devhelp==1.0.6 in ./.venv/lib/python3.12/site-packages (from -r requirements-cidocs.txt (line 8)) (1.0.6)
+Requirement already satisfied: sphinxcontrib-htmlhelp==2.0.5 in ./.venv/lib/python3.12/site-packages (from -r requirements-cidocs.txt (line 10)) (2.0.5)
+Requirement already satisfied: sphinxcontrib-jquery==4.1.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-cidocs.txt (line 11)) (4.1)
+Requirement already satisfied: sphinxcontrib-jsmath==1.0.1 in ./.venv/lib/python3.12/site-packages (from -r requirements-cidocs.txt (line 12)) (1.0.1)
+Requirement already satisfied: sphinxcontrib-qthelp==1.0.7 in ./.venv/lib/python3.12/site-packages (from -r requirements-cidocs.txt (line 14)) (1.0.7)
+Requirement already satisfied: sphinxcontrib-serializinghtml==1.1.10 in ./.venv/lib/python3.12/site-packages (from -r requirements-cidocs.txt (line 16)) (1.1.10)
+Requirement already satisfied: sphinxcontrib-spelling==8.0.0 in ./.venv/lib/python3.12/site-packages (from -r requirements-cidocs.txt (line 17)) (8.0.0)
+Requirement already satisfied: sphinxcontrib-websupport==1.2.7 in ./.venv/lib/python3.12/site-packages (from -r requirements-cidocs.txt (line 19)) (1.2.7)
+Requirement already satisfied: Pygments==2.17.2 in ./.venv/lib/python3.12/site-packages (from -r requirements-cidocs.txt (line 20)) (2.17.2)
+Requirement already satisfied: setuptools in ./.venv/lib/python3.12/site-packages (from autobahn==23.6.2->-r requirements-ci.txt (line 7)) (69.2.0)
+Installing collected packages: buildbot-pkg, buildbot-worker, buildbot
+  Attempting uninstall: buildbot-pkg
+    Found existing installation: buildbot-pkg 0.0.0
+    Uninstalling buildbot-pkg-0.0.0:
+      Successfully uninstalled buildbot-pkg-0.0.0
+  Running setup.py develop for buildbot-pkg
+  Attempting uninstall: buildbot-worker
+    Found existing installation: buildbot-worker 2024.3.27
+    Uninstalling buildbot-worker-2024.3.27:
+      Successfully uninstalled buildbot-worker-2024.3.27
+  Running setup.py develop for buildbot-worker
+  Attempting uninstall: buildbot
+    Found existing installation: buildbot 2024.3.27
+    Uninstalling buildbot-2024.3.27:
+      Successfully uninstalled buildbot-2024.3.27
+  Running setup.py develop for buildbot
+Successfully installed buildbot-2024.3.27 buildbot-pkg-0.0.0 buildbot-worker-2024.3.27
+now you can type following command to activate your virtualenv
+. .venv/bin/activate
+Collecting junitxml
+  Using cached junitxml-0.7-py3-none-any.whl
+Installing collected packages: junitxml
+Successfully installed junitxml-0.7
+Requirement already satisfied: python-subunit in ./.venv/lib/python3.12/site-packages (1.4.4)
+Requirement already satisfied: iso8601 in ./.venv/lib/python3.12/site-packages (from python-subunit) (2.1.0)
+Requirement already satisfied: testtools>=0.9.34 in ./.venv/lib/python3.12/site-packages (from python-subunit) (2.7.1)
+Requirement already satisfied: setuptools in ./.venv/lib/python3.12/site-packages (from testtools>=0.9.34->python-subunit) (69.2.0)
