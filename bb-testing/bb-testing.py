@@ -66,15 +66,18 @@ class LogDetails(ModalScreen[None]):
     def compose(self) -> ComposeResult:
         with Container(id="log-details-container"):
             if data.selected.find('failure') is not None:
-                yield Static(f"FAILED: {data.selected.get('classname')}", id="title")
+                yield Static(f"FAILED: {data.selected.get('classname')}")
+                yield Static(f"Module: {data.selected.get('name')}", id="title")
                 with ScrollableContainer():
                     yield Static(data.selected.find('failure').text)
             elif data.selected.find('skipped') is not None:
-                yield Static(f"SKIPPED: {data.selected.get('classname')}", id="title")
+                yield Static(f"SKIPPED: {data.selected.get('classname')}")
+                yield Static(f"Module: {data.selected.get('name')}", id="title")
                 with ScrollableContainer():
                     yield Static(data.selected.find('skipped').text)
             else:
-                yield Static(f"PASSED: {data.selected.get('classname')}", id="title")
+                yield Static(f"PASSED: {data.selected.get('classname')}")
+                yield Static(f"Module: {data.selected.get('name')}", id="title")
             yield Label("Press ESC to exit", id="exit")
 
 class Testing(App):
