@@ -23,8 +23,8 @@ make virtualenv
 . .venv/bin/activate
 
 # install dependencies for bb-testing
-pip3 install junitxml
-pip3 install python-subunit
+pip3 install junitxml==0.7
+pip3 install python-subunit==1.4.4
 pip3 install textual==0.53.1
 
 # run the trial unit test
